@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+   --primary-color: #FF0000;
+   --primary-text-color: #FFFFFF;
+   --h2-color-text: #000000;
+   --header-background-color: #00000066;
+   --nav-opacity-color: #FFFFFF33;
+   --h1-text-shadow: #00000040;
+   --primary-shadow: #FF00004D;
+   --secondary-header-btn-color: #FFFFFF29;
+   --blog-text-color: #6A6A6A;
+   --servis-footer-background-color: #28272C;
+   --service-kontakt-text-color: #B2B2B2;
+   --form-border-copyr-color: #D1D1D1;
+    --primary-font: "nunito sans",sans-serif;
+    --secondary-font: "open sans", sans-serif;
+}
