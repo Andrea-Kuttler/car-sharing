@@ -26,6 +26,10 @@ body {
     align-items: center;
 }
 
+.page {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
 .container-header {
     display: flex;
     flex-direction: row;
@@ -72,6 +76,13 @@ body {
     padding: 30px 40px;
     flex-grow: 1;
 }
+
+.menu-list-item:first-child {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    background: #FFFFFF33;
+}
+
 .menu-a {
     color: var(--primary-text-color);
     text-decoration: none;
@@ -81,7 +92,6 @@ body {
     color: var(--primary-text-color);
     text-decoration: none;
     background: #FFFFFF33;
-    opacity: 1;
 }
 
 .intro{
@@ -103,6 +113,7 @@ body {
 .bg-image {
     height: 70vh;
     max-width: 1088px;
+    opacity:0,3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,9 +138,11 @@ body {
 .main-text {
     color: var(--primary-text-color);
     font-family: var(--primary-font);
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .main-btn {
@@ -175,11 +188,12 @@ body {
     width: 55px;
     height: 55px;
     display: flex;
-    align-items: bottom;
+    align-items:bottom;
     justify-items: center;
     padding: 17px;
-    position: absolute;
-    bottom: 10px;
+    position:absolute;
+    bottom: -30px;
+    
 }
 
 .blog{
@@ -189,6 +203,7 @@ body {
     align-items: center;
     width: 1088px;
     max-height: 100vh;
+    margin-top: 50px;
 }
 
 .h2-title {
@@ -200,6 +215,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .h2-title::before, .h2-title::after {
@@ -208,7 +225,7 @@ body {
     height: 3px;
     width: 50px;
     background-color: var(--primary-color);
-    margin: 10px;
+    margin: 15px;
 }
 
 .blog-articles {
@@ -225,14 +242,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-right: 15px;
 }
 
 .b-article-image1 {
     background-image: url("../images/photo1.png");
     background-size: cover;
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -241,8 +258,8 @@ body {
 .b-article-image2 {
     background-image: url("../images/photo2.png");
     background-size: cover;
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,9 +268,336 @@ body {
 .b-article-image3 {
     background-image: url("../images/photo3.png");
     background-size: cover;
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.b-article-text {
+    width: 250px;
+    font-size: 16px;
+    color:var(--blog-text-color);
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.b-article-text-long{
+    width: 250px;
+    font-size: 12px;
+    color:var(--service-kontakt-text-color);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/*------tady začíná service------*/
+.service {
+    width: 1088px;
+    background-color:var(--servis-footer-background-color);
+    margin-top: 50px;
+}
+
+/*------tady začíná nadpis------*/
+.h1-box {
+    width: 1088px;
+}
+
+.service .h2-title {
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-size: 35px;
+    font-weight: bold;
+    color:var(--primary-text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.h2-title::before, .h2-title::after {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 50px;
+    background-color: var(--primary-color);
+    margin: 15px;
+}
+/*------tady začínají fotky service------*/
+.main-box-service {
+    max-width: 1088px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+   
+}
+
+.service-image {
+    background: url("../images/photo1.png");
+    border-radius: 50%;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+/*------tady začínají nadpisy a texty service------*/
+.minor-box-service{
+    max-width: 220px;
+    padding-left: 80px;
+    margin-bottom: 50px;
+}
+
+.service-title {
+    width: 250px;
+    font-size: 14px;
+    color:var(--primary-text-color);
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 60px;
+}
+
+.service-text {
+    width: 210px;
+    font-size: 12px;
+    color:var(--service-kontakt-text-color);
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.minor-button {
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    text-shadow: var(--primary-shadow);
+    font-size: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 3px 6px #FF00004D;
+    margin-right: 25px;
+    padding: 8px 8px;
+    width: 100px;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.minor-button:hover, .main-primary-btn:hover, .main-secondary-btn:hover {
+    cursor: pointer;
+}
+
+.service-image1 {
+    background: url("../images/mini2.png");
+    border-radius: 50%;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.service-image2 {
+    background: url("../images/mini3.png");
+    border-radius: 50%;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.service-image3 {
+    background: url("../images/mini4.png");
+    border-radius: 50%;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+/*---------------tady začíná kontakt------------*/
+.contact {
+    max-width: 1088px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-title {
+    width: 250px;
+    font-size: 14px;
+    color:var(--primary-text-color);
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 60px;
+}
+.main-box-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1088px;
+}
+.contact-image {
+    background: url(../images/Form\ Photo.png);
+    background-repeat: none;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    
+}
+.form-text-box {
+    max-width: 320px;
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+.input-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin:auto;
+
+}
+.input-box {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--service-kontakt-text-color);
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--service-kontakt-text-color);
+    
+}
+.input-box:focus { 
+    border: 1px solid red;
+    transition: 0.3s;
+ }
+
+.text-contact {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    color: var(--service-kontakt-text-color);
+    font-size: 14px;
+    padding-left:5px;
+
+}
+.check-contact-box {
+    display: flex;
+    flex-direction: row;
+ 
+}
+.check-box-image {
+    background: url(../images/Icon\ Check.svg);
+    background-repeat: no-repeat;
+    margin:8px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--form-border-copyr-color);
+    padding:6px;
+}
+.minor-button-contact {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    text-shadow: var(--primary-shadow);
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 40px;
+    background-color: var(--secondary-header-btn-color);
+    box-shadow: 0px 3px 6px var(--primary-color);
+    margin-right: 25px;
+    padding: 8px 8px;
+    width: 100px;
+    margin-left: 170px;
+    margin-top: 30px;
+}
+.message-input-box {
+    height: 150px;
+}
+.footer-box {
+    max-width: 1088px;
+    background-color: var(--servis-footer-background-color);
+}
+.footer-logo-box {
+    width: 1088px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--primary-font);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 80px;
+    padding-top: 40px;
+}
+.footer-menu-box {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.menu-list-footer{
+    display: flex;
+    flex-direction: column;
+    padding:5px;
+}
+
+.footer-list-item {
+    flex-direction: column;
+    font-family: var(--secondary-font);
+    font-size: 13px;
+    padding-bottom: 4px;
+}
+
+.menu-b {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.menu-b-active {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-copy {
+    font-size: 10px;
+    color: var(--service-kontakt-text-color);
+    font-family: var(--primary-font);
+    text-align: right;
+    padding-right: 16px;
+    padding-bottom: 20px;
 }
